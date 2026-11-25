@@ -1,0 +1,10 @@
+@layer theme.templates {
+.template-article .container-main h1 {
+  margin-bottom: var(--space-lg);
+}
+
+.template-article .container-main .text > p {
+  max-width: var(--measure);
+}
+
+}
