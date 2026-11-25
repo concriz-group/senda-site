@@ -38,7 +38,7 @@
 }
 
 /* a wide teaser in the content column reaches out to the wide width */
-.region-main .teaser--wide {
+.container-main .teaser--wide {
   margin-inline: calc((100% - var(--wide-max)) / 2);
 }
 

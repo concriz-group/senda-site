@@ -26,5 +26,10 @@
 .share__link[data-network="x"]::before { mask-image: url("../../images/x-85285ea6cf.svg"); }
 .share__link[data-network="linkedin"]::before { mask-image: url("../../images/linkedin-60c73a57e8.svg"); }
 .share__link[data-network="whatsapp"]::before { mask-image: url("../../images/whatsapp-cdc26ab2f0.svg"); }
+.share__link[data-network="bluesky"]::before, .share__link[data-network="telegram"]::before, .share__link[data-network="reddit"]::before,
+.share__link[data-network="pinterest"]::before, .share__link[data-network="other"]::before { mask-image: url("../../images/link-78893222bb.svg"); }
+
+.share__link--icon { display: inline-grid; place-items: center; color: inherit; }
+.share__link--icon::before { display: none; }
 
 }

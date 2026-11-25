@@ -50,8 +50,8 @@
   margin: 0;
 }
 
-.carousel__indicator { width: 0.5rem; height: 0.5rem; border-color: var(--color-muted); }
-.carousel__indicator[aria-current="true"] { background: var(--color-fg); border-color: var(--color-fg); }
+.carousel__indicator::before { width: 0.5rem; height: 0.5rem; border-color: var(--color-muted); }
+.carousel__indicator[aria-current="true"]::before { background: var(--color-fg); border-color: var(--color-fg); }
 
 /* image-only galleries are wide banners, as on the reference adventure pages */
 .carousel--gallery .teaser__media img { width: 100%; aspect-ratio: 4 / 1; object-fit: cover; }

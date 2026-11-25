@@ -1,5 +1,6 @@
 // Browser script for the nav component, published as its own hashed file.
-// Without it the menu is always visible; with it, narrow screens get a toggle.
+// The page arrives collapsible (nav--enhanced) so nothing moves when this runs;
+// it only makes the toggle open and close the menu.
 (function (enhance) {
   if (typeof module === 'object' && module.exports) module.exports = enhance;
   else document.querySelectorAll('[data-nav]').forEach(enhance);
@@ -12,9 +13,6 @@
     nav.classList.toggle('nav--open', open);
     toggle.setAttribute('aria-expanded', String(open));
   }
-
-  toggle.hidden = false;
-  nav.classList.add('nav--enhanced');
 
   toggle.addEventListener('click', function () {
     setOpen(toggle.getAttribute('aria-expanded') !== 'true');

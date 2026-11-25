@@ -49,7 +49,7 @@ a:hover { text-decoration-color: var(--color-fg); }
 :focus-visible { outline-color: var(--color-fg); }
 
 /* section titles: a short accent rule under each heading of the page body */
-.region-main .text h2::after {
+.container-main .text h2::after {
   content: "";
   display: block;
   width: 4.5rem;
